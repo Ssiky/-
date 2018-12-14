@@ -1,0 +1,42 @@
+2018-12-14 19:12:28 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:12:28 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:12:28 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:12:28 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:12:28 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:12:28 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:14:40 INFO <module> [run.py-12] 测试开始==================================================
+2018-12-14 19:14:40 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:14:40 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:14:40 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:14:40 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:14:40 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:14:40 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:14:40 INFO <module> [run.py-16] 测试结束==================================================
+2018-12-14 19:27:38 INFO <module> [run.py-12] 测试开始==================================================
+2018-12-14 19:27:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:27:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-4] --------------------------------------------------
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-5] 执行用例：test_reg_success
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-6] 接口地址：http://115.28.108.130:8080/gasStation/process
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-7] 请求数据：{'dataSourceId': 'bHRz', 'methodId': '00A', 'CardInfo': {'cardNumber': '20190101'}}
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-8] 期望结果：{"code":200,"msg":"添加卡成功","success":False}
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-9] 期望结果：{"code":200,"msg":"添加卡成功","success":false}
+2018-12-14 19:27:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:27:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-4] --------------------------------------------------
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-5] 执行用例：test_reg_wrong
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-6] 接口地址：http://115.28.108.130:8080/gasStation/process
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-7] 请求数据：{'dataSourceId': 'bHRz', 'methodId': '', 'CardInfo': {'cardNumber': '0988'}}
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-8] 期望结果：{"code":301,"msg":"业务ID不能为空!","success":false}
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-9] 期望结果：{"code":301,"msg":"业务ID不能为空!","success":false}
+2018-12-14 19:27:39 DEBUG _new_conn [connectionpool.py-205] Starting new HTTP connection (1): 115.28.108.130:8080
+2018-12-14 19:27:39 DEBUG _make_request [connectionpool.py-393] http://115.28.108.130:8080 "POST /gasStation/process HTTP/1.1" 200 None
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-4] --------------------------------------------------
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-5] 执行用例：test_Recharge_sucess
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-6] 接口地址：http://115.28.108.130:8080/gasStation/process
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-7] 请求数据：{'dataSourceId': 'bHRz', 'methodId': '03A', 'CardInfo': {'cardNumber': '20190907', 'cardBalance': '1000'}}
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-8] 期望结果：{"code":200,"msg":"充值成功",
+"result":{"cardBalance":"8000","cardNumber":"199101141","cardStatus":5010,"id":742318419,"userId":8550},
+"success":true}
+2018-12-14 19:27:39 INFO log_case_info [case_log.py-9] 期望结果：{"code":200,"msg":"充值成功","result":{"cardBalance":"9000","cardNumber":"20190907","cardStatus":5010,"id":742320254,"userId":8709},"success":true}
+2018-12-14 19:27:39 INFO <module> [run.py-16] 测试结束==================================================
